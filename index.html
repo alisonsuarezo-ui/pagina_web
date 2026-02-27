@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alisson Suarez app </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SISTEMA DE NAVEGACIÓN (RADIOS OCULTOS) -->
+    <input type="radio" name="nav" id="tab-inicio" checked>
+    <input type="radio" name="nav" id="tab-perfil">
+    <input type="radio" name="nav" id="tab-atributos">
+    <input type="radio" name="nav" id="tab-herramientas">
+    <input type="radio" name="nav" id="tab-habilidades">
+    <input type="radio" name="nav" id="tab-funcionalidades">
+    <input type="radio" name="nav" id="tab-social">
+    <input type="radio" name="nav" id="tab-estudio">
+    <input type="radio" name="nav" id="tab-actualizaciones">
+    <input type="radio" name="nav" id="tab-backend">
+
+    <div class="app-frame">
+        <!-- BARRA DE ESTADO SUPERIOR -->
+        <div class="status-bar">
+            <span>🔋 100%</span>
+            <span>Alison 1.0 · Smart & Funny</span>
+            <span>📶 WiFi</span>
+        </div>
+
+        <!-- ENCABEZADO PRINCIPAL -->
+        <header class="app-header">
+            <h1>Alisson Suarez app</h1>
+            <span class="badge">¡Bienvenidos a mi app personal!</span>
+        </header>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav class="navbar">
+            <label for="tab-inicio">🏠 Inicio</label>
+            <label for="tab-perfil">👤 Perfil</label>
+            <label for="tab-atributos">✨ Atributos</label>
+            <label for="tab-herramientas">🛠️ Motor</label>
+            <label for="tab-habilidades">💻 Skills</label>
+            <label for="tab-funcionalidades">⚙️ Features</label>
+            <label for="tab-social">🎉 Social</label>
+            <label for="tab-estudio">📚 Estudio</label>
+            <label for="tab-actualizaciones">🔄 Updates</label>
+            <label for="tab-backend">🔧 Backend</label>
+        </nav>
+
+        <!-- ÁREA DE CONTENIDO -->
+        <main class="content-area">
+            
+            <!-- 1. INICIO -->
+            <section class="module module-inicio">
+                <div class="hero-card">
+                    <div class="hero-icon">🌸👩‍💻</div>
+                    <h2>¡Bienvenida a tu sistema personal!</h2>
+                    <p class="description">Aplicación personal en constante desarrollo. Combina inteligencia, carisma y perseverancia con una personalidad risueña y divertida. Optimizada para el aprendizaje continuo, la programación y el crecimiento personal.</p>
+                    
+                    <div class="action-buttons">
+                        <a href="#" class="btn btn-primary" onclick="document.getElementById('tab-perfil').click()">👤 Ver Perfil</a>
+                        <a href="#" class="btn btn-secondary" onclick="document.getElementById('tab-funcionalidades').click()">✨ Funcionalidades</a>
+                        <a href="#" class="btn btn-accent" onclick="document.getElementById('tab-backend').click()">🔓 Entrar al Sistema</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. PERFIL -->
+            <section class="module module-perfil">
+                <div class="profile-header">
+                    <div class="avatar">👩‍🔬</div>
+                    <div class="info">
+                        <h2>Alison Suárez</h2>
+                        <p class="status">🟢 Estudiante de técnico (2025)</p>
+                        <p class="role">Aprendiz en constante evolución</p>
+                    </div>
+                </div>
+                <div class="bio-box">
+                    <p>Persona inteligente, divertida y perseverante, con gran capacidad para adaptarse y aprender rápido. Me gusta mejorar, retarme y crecer.</p>
+                    <div class="tags">
+                        <span>#Estudiante</span>
+                        <span>#DevJunior</span>
+                        <span>#Creativa</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. ATRIBUTOS -->
+            <section class="module module-atributos">
+                <h2 class="section-title">Atributos del Sistema</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="icon">💛</div>
+                        <h3>Amable</h3>
+                        <p>Genera entornos positivos y relaciones sanas.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">✨</div>
+                        <h3>Carismática</h3>
+                        <p>Capacidad natural para conectar con personas.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">😄</div>
+                        <h3>Risueña</h3>
+                        <p>Energía positiva constante.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">🧠</div>
+                        <h3>Inteligente</h3>
+                        <p>Procesamiento rápido de información y análisis.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">🔥</div>
+                        <h3>Perseverante</h3>
+                        <p>No se rinde fácilmente ante dificultades.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. HERRAMIENTAS -->
+            <section class="module module-herramientas">
+                <h2 class="section-title">Motor Interno</h2>
+                <div class="tools-list">
+                    <div class="tool-item">🧠 Pensamiento lógico</div>
+                    <div class="tool-item">📚 Aprendizaje rápido</div>
+                    <div class="tool-item">🎯 Enfoque en metas</div>
+                    <div class="tool-item">💬 Comunicación efectiva</div>
+                    <div class="tool-item">❤️ Empatía</div>
+                    <div class="tool-item">🛠️ Resolución de problemas</div>
+                    <div class="tool-item">🔄 Adaptabilidad</div>
+                    <div class="tool-item">💡 Creatividad</div>
+                </div>
+            </section>
+
+            <!-- 5. HABILIDADES -->
+            <section class="module module-habilidades">
+                <h2 class="section-title">Habilidades Técnicas En Proceso de mejora</h2>
+                <div class="skills-container">
+                    <div class="skill-row">
+                        <span>🐍 Python</span>
+                        <div class="bar"><div style="width: 60%"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <span>🌿 Git</span>
+                        <div class="bar"><div style="width: 50%"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <span>🌐 HTML</span>
+                        <div class="bar"><div style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <span>🎨 CSS</span>
+                        <div class="bar"><div style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <span>📂 Organización</span>
+                        <div class="bar"><div style="width: 90%"></div></div>
+                    </div>
+                </div>
+                <div class="extra-skills">
+                    <span class="tag">Disciplina académica</span>
+                    <span class="tag">Conceptos nuevos</span>
+                </div>
+            </section>
+
+            <!-- 6. FUNCIONALIDADES -->
+            <section class="module module-funcionalidades">
+                <h2 class="section-title">Features Premium</h2>
+                <ul class="feature-list">
+                    <li>🔓 <strong>Modo Reto Activado:</strong> Cuando algo es difícil, se motiva más.</li>
+                    <li>🚀 <strong>Auto-Mejora Continua:</strong> Siempre aprendiendo.</li>
+                    <li>🤝 <strong>Trabajo en Equipo:</strong> Colaboración nativa.</li>
+                    <li>🎭 <strong>Equilibrio:</strong> Responsabilidad y diversión.</li>
+                    <li>📈 <strong>Mentalidad de crecimiento:</strong> Siempre hacia adelante.</li>
+                </ul>
+            </section>
+
+            <!-- 7. MODO SOCIAL -->
+            <section class="module module-social">
+                <div class="mode-header social-mode">
+                    <h2>🎉 Modo Social</h2>
+                    <span class="status-badge">ACTIVADO</span>
+                </div>
+                <div class="context-box">
+                    <p>Activado en: Reuniones, Amigos, Espacios de confianza.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat">💬 Conversación fluida</div>
+                    <div class="stat">⚡ Energía alegre</div>
+                    <div class="stat">🌟 Carisma natural</div>
+                    <div class="stat">⚖️ Fiestera equilibrada</div>
+                </div>
+            </section>
+
+            <!-- 8. MODO ESTUDIO -->
+            <section class="module module-estudio">
+                <div class="mode-header study-mode">
+                    <h2>📚 Modo Estudio</h2>
+                    <span class="status-badge">AUTO-ACTIVADO</span>
+                </div>
+                <p class="trigger-text">Se activa cuando hay: Metas académicas, Evaluaciones, Proyectos.</p>
+                <div class="check-list">
+                    <div class="check-item">✅ Concentración elevada</div>
+                    <div class="check-item">✅ Organización de tareas</div>
+                    <div class="check-item">✅ Gestión del tiempo</div>
+                    <div class="check-item">✅ Persistencia hasta terminar</div>
+                </div>
+            </section>
+
+            <!-- 9. ACTUALIZACIONES -->
+            <section class="module module-actualizaciones">
+                <h2 class="section-title">Historial de Versiones</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="dot">1.0</div>
+                        <div class="content">Colegio terminado</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="dot">1.5</div>
+                        <div class="content">Inicio técnico</div>
+                    </div>
+                    <div class="timeline-item active">
+                        <div class="dot">2.0</div>
+                        <div class="content">Mayor dominio en programación</div>
+                    </div>
+                    <div class="timeline-item future">
+                        <div class="dot">?</div>
+                        <div class="content">Profesional consolidada</div>
+                    </div>
+                </div>
+                <div class="system-note">
+                    <p>✨ Aprende de errores | Mejora constante | Optimización de habilidades</p>
+                </div>
+            </section>
+
+            <!-- 10. BACKEND -->
+            <section class="module module-backend">
+                <h2 class="section-title">🔧 Backend del Sistema</h2>
+                <p class="subtitle">Lo que sostiene todo (Valores personales)</p>
+                
+                <div class="server-rack">
+                    <div class="server-item">💪 Disciplina</div>
+                    <div class="server-item">📌 Responsabilidad</div>
+                    <div class="server-item">🔥 Perseverancia</div>
+                    <div class="server-item">✨ Deseo de superación</div>
+                    <div class="server-item">💖 Confianza</div>
+                    <div class="server-item">🌱 Resiliencia</div>
+                </div>
+
+                <div class="process-flow">
+                    <h3>Ciclo de Mejora</h3>
+                    <div class="flow-steps">
+                        <div class="step">Entrada (Experiencias)</div>
+                        <div class="arrow">➡️</div>
+                        <div class="step">Procesamiento (Reflexión)</div>
+                        <div class="arrow">➡️</div>
+                        <div class="step">Mejora (Crecimiento)</div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>🌸 Alison 1.0 · En constante evolución 🌸</p>
+            <p class="small">Hecho con amabilidad, carisma y perseverancia</p>
+        </footer>
+    </div>
+
+</body>
+</html>
